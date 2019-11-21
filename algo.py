@@ -6,7 +6,7 @@ import mt4_hst
 import zmq  # TODO: connect to MT4
 
 
-df = mt4_hst.read_hst("C:/Users/mwah/Desktop/trading/EURUSD.hst")   #return pandas dataframe
+df = mt4_hst.read_hst("C:/EURUSD.hst")   #return pandas dataframe
 date,open,close =df["time"], df["open"] , df["close"]
 
 avg_price = (open + close) / 2  # array of avg prices
