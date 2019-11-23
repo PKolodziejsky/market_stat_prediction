@@ -4,7 +4,10 @@ import matplotlib.dates as mdates
 from functools import reduce        # takes function as argument
 import mt4_hst
 import zmq  # TODO: connect to MT4
+from dwx_zeromq_connector import DWX_ZeroMQ_Connector
 
+_zmq = DWX_ZeroMQ_Connector()
+_zmq._DWX_MTX_SUBSCRIBE_MARKETDATA_('EURUSD')
 
 df = mt4_hst.read_hst("C:/EURUSD.hst")   #return pandas dataframe
 date,open,close =df["time"], df["open"] , df["close"]
