@@ -1,4 +1,4 @@
 # market_stat_prediction
-Algorithm predicting future movement of the price by comparing current pattern to similar patterns in the past and averaging their outcomes (possible connection to Meta Trader 4, however this particular version is for testing on historical data)
+Algorithm predicting future movement of the price by comparing current pattern to similar patterns in the past and averaging their outcomes (possible straightforward connection to Meta Trader 4 using DARWINEX connector)
 
-TODO: Add Fast Fourier Transform as second prediction algorithm 
+TODO: Add Fast Fourier Transform as a second prediction algorithm 
